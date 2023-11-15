@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Music Player</title>
+</head>
+
+<body>
+    <audio id="audioPlayer"></audio>
+    <div class="music-player">
+        <div class="song-info">
+            <img id="albumImage" src="1.jpeg" alt="Album Image">
+            <p class="song-title" id="songTitle">Song Title</p>
+            <p class="artist" id="artist">Artist Name</p>
+            <div class="elapsed-time-container">
+                <p class="elapsed-time" id="elapsedTimeLeft">0:00</p>
+                <p class="elapsed-time" id="elapsedTimeRight">0:00</p>
+            </div>
+            <div class="progress-line-container">
+                <div class="progress-line" id="progressLine"></div>
+            </div>
+        </div>
+        <div class="player-controls">
+            <i class='bx bx-skip-previous' id="prevBtn"></i>
+            <i class='bx bx-play-circle' id="playBtn"></i>
+            <i class='bx bx-skip-next' id="nextBtn"></i>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
